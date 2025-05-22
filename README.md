@@ -60,14 +60,6 @@ An advanced educational management platform built with Streamlit and SQLite, fea
    streamlit run app.py
    ```
 
-## Default Credentials
-
-| Role | Username | Password |
-|------|----------|----------|
-| Admin | admin | admin123 |
-| Teacher | teacher1 | teacher123 |
-| Student | student1 | student123 |
-
 ## Project Structure
 
 ```
@@ -91,4 +83,5 @@ MIT
 
 ## Contributors
 
-- [Your Name](https://github.com/yourusername) 
+- VIJOY(https://github.com/yojivcs)
+- Mymona(https://github.com/Mymona201) 
