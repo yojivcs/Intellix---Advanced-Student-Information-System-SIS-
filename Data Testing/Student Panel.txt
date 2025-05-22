@@ -1,0 +1,100 @@
+
+
+## 🎓 Student Panel – Full Functional Breakdown
+
+### 📂 Sidebar Menu Structure
+
+(Excludes *Admit Card* and *Library Record*)
+
+1. **Dashboard (Home)**
+
+   * Overview: GPA summary, attendance percentage, recent notices.
+   * AI Suggestions: Risk alerts and smart study tips.
+   * Quick Links: CT schedule, class list, grade timeline.
+
+2. **Instructor Evaluation**
+
+   * Evaluate teachers based on:
+
+     * Course delivery
+     * Engagement & feedback
+     * Punctuality
+   * Form submission open during evaluation phase only (enabled by Admin).
+   * Results anonymized and visible to admin only.
+
+3. **Class Registration**
+
+   * Displays eligible courses for the semester.
+   * Student selects preferred courses.
+   * Courses limited by max capacity and prerequisites.
+   * Linked with Teacher panel to show assigned instructor.
+   * Admin finalizes the registration (approves/disapproves).
+
+4. **Transcript**
+
+   * Semester-wise grade list.
+   * Shows CGPA calculation per semester and overall.
+   * Option to download PDF or print.
+   * Pulled from the Grade module filled by teachers.
+
+5. **Progress Report**
+
+   * Mid-semester report showing:
+
+     * CT (Class Test) scores
+     * Assignment marks
+     * Attendance
+   * AI comment: “Risk of failing”, “Doing well”, etc. (based on cutoffs).
+   * Dynamically updates as teachers enter scores.
+   * Acts as early intervention tool.
+
+6. **Semester Report**
+
+   * Final report (after semester completion).
+   * Includes:
+
+     * Mid + Assignment + Final marks
+     * GPA for each subject
+     * Pass/Fail indication
+   * Generated post teacher mark submission & admin validation.
+
+7. **Classes**
+
+   * View enrolled course list.
+   * View assigned teacher details.
+   * Lecture schedule & timing.
+   * Materials and notices uploaded by teacher.
+
+---
+
+## 🔁 Panel Interconnection with Teacher Panel
+
+| Module             | Connected With (Teacher Panel)      | Description                                                                 |
+| ------------------ | ----------------------------------- | --------------------------------------------------------------------------- |
+| Progress Report    | CT & Assignment Submission          | Teachers upload mid/CT/assignment marks. Student panel pulls dynamically.   |
+| Semester Report    | Final Exam Scores                   | Final marks are inserted by teachers, aggregated into semester report.      |
+| Classes            | Class Schedule & Uploaded Materials | Teacher assigns classes, uploads resources, shares notifications.           |
+| Transcript         | Grade Submission                    | Each course result pushed to student profile by teacher submissions.        |
+| Class Registration | Teacher Assignment + Admin Approval | Teacher availability influences course slots. Admin finalizes registration. |
+
+---
+
+## 🧠 AI-Driven Elements in Student Panel
+
+* GPA prediction graph (based on current performance).
+* AI-based study suggestions (linked to student risk).
+* Alert on underperformance in specific subjects.
+* Smart notification: “Assignment 2 due in 2 days from CSE 303”.
+
+---
+
+## ⚙️ Other Functional Notes
+
+* **No login complexity**: Simple login `student / student123`.
+* Responsive and mobile-friendly.
+* Uses Tailwind UI – cards, tags, badges, and clean modular layout.
+* Real-time fetch from backend via JS → FastAPI (for CTs, assignments, etc.)
+
+---
+
+Would you like me to now structure this into a canvas document or generate the corresponding API endpoint plan for this student panel?

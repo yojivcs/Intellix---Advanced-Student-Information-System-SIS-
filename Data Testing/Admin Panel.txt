@@ -1,0 +1,128 @@
+Absolutely! Here's the **refined and merged Admin Panel feature plan** for **Intellix – AI-Powered SIS**, incorporating **your detailed updates** with the previously outlined features. Everything is organized and rewritten professionally for implementation or documentation purposes:
+
+---
+
+## 🧑‍💼 Admin Panel – Final Feature Set for Intellix
+
+The Admin Panel is the control center of the Intellix platform. It empowers academic administrators to manage users, academic sessions, courses, and performance analytics efficiently. Below is a comprehensive breakdown of its functionalities:
+
+---
+
+### 1. **Role-Based Access & User Profile Management**
+
+* Admin can **create new user profiles** for students and teachers by entering:
+
+  * Full Name
+  * Profile Picture
+  * Contact Information (Phone, Email)
+  * Address
+  * Admission Date or Join Date
+* On submission, the system **automatically generates a unique Student/Teacher ID**, along with a system-generated **username and password** for login.
+* These IDs will be used as tracking references for academic enrollment, teaching assignments, and performance records.
+* Admin can view and manage login credentials securely and reset them if necessary.
+
+---
+
+### 2. **Course Assignment & Enrollment Management**
+
+* For a selected academic session or semester:
+
+  * Admin can **assign teachers to courses** using their IDs.
+  * Admin can **view all enrolled students** in a course.
+  * Admin manually **adds students to specific courses** by selecting from available student IDs.
+* The system does not rely on date-based automation (since it runs locally), so **all academic transitions are performed manually** by the admin.
+* An **AI Assistant button** will be present to auto-fill these operations:
+
+  * Admin types a prompt like *"Assign student IDs 101, 102, 103 to course CSE302"*
+  * The system simulates filling the form (checkboxes, course names) but leaves the admin to review and confirm before final submission.
+  * This feature will also apply to assigning multiple courses to a teacher via AI input.
+
+---
+
+### 3. **Course Management System**
+
+* Admin can:
+
+  * Create, update, or delete **courses** with:
+
+    * Course Code
+    * Course Name
+    * Credit Hours
+    * Max Student Capacity
+  * A bulk import option will allow admin to upload a list of all courses from CSV.
+  * Admin can enroll students in bulk to a course by entering multiple student IDs.
+  * A similar bulk option exists for assigning teachers to multiple courses.
+
+---
+
+### 4. **AI-Powered Academic Risk Alerts**
+
+* The system evaluates student performance across three standard evaluation categories:
+
+  * **Midterm** (30 marks)
+  * **Assignments** (20 marks)
+  * **Final Exam** (50 marks)
+* If a student's combined score (before the final) falls near or below the **passing threshold of 40**, the AI will:
+
+  * Display an alert on their dashboard
+  * Notify them of the **minimum score needed in the final to pass**
+  * Suggest study strategies or course repetition in worst-case scenarios
+
+---
+
+### 5. **Academic Calendar & Routine Planning**
+
+* Admin can create:
+
+  * **Class routines** in tabular formats with mappings of:
+
+    * Courses
+    * Teachers assigned
+    * Seat capacity
+    * Class timings
+  * **Exam routines** similarly, including room numbers and student groups
+* Though not dynamic (due to lack of real-time clocking), this module will be manually managed for each session and downloadable.
+
+---
+
+### 6. **Dashboard Analytics & Metrics Overview**
+
+* Admin homepage will display real-time:
+
+  * Total number of students, teachers, and active courses
+  * Performance stats like average GPA, dropout predictions, and risk alerts
+  * Chart visualizations for institutional metrics (e.g., grade distribution, course load by teacher)
+  * Widgets styled in soft shadow cards (Poppins font-based UI, per visual reference)
+
+---
+
+### 7. **Bulk Data Operations & Sync Utilities**
+
+* Import/export functionality for:
+
+  * Student and teacher profiles
+  * Course lists
+  * Attendance and grades
+* Bulk upload via CSV or manual multi-entry forms
+
+---
+
+### 8. **(Optional) Access Logs & Security** *(Not required for localhost version)*
+
+* This feature is not mandatory and will be excluded to simplify development for a localhost environment.
+
+---
+
+### 9. **AI Integration Panel** – 🌟 *Very Important*
+
+* This module acts as the AI Control Center for the admin:
+
+  * Manually initiate GPA prediction jobs for departments or batches
+  * Auto-generate study plans based on performance analytics
+  * View logs of how the AI is interacting with student data
+  * Provide prompts for the AI to generate insights or recommendations
+* Backend AI logic will be linked via internal FastAPI endpoints
+
+---
+
+Let me know if you'd like this broken down as a checklist or implemented into a **frontend structure** or **SRS module section**.

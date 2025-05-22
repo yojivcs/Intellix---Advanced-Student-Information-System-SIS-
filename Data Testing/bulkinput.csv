@@ -1,0 +1,37 @@
+Code,Title,CreditHours,MaxStudents
+MATH 0541-263,Mathematics II Geometry,3,10
+HUM 0222-341,History of the Emergence of Independent Bangladesh,3,10
+CSE 0613-213,Algorithm Design and Analysis,3,10
+CSE 0613-214,Algorithm Design and Analysis Lab,1.5,10
+EEE 0714-261,Electronic Devices and Circuits,3,10
+EEE 0714-262,Electronic Devices and Circuits Lab,1.5,10
+CSE 0613-211,Data Structure,3,10
+CSE 0613-212,Data Structure Lab,1.5,10
+BANG 0288-221,Bangla Language and Literature,2,10
+MATH 0541-265,Mathematics IV - Applied Statistics,3,10
+CSE 0612-253,Database Management System,3,10
+CSE 0612-254,Database Management System Lab,1.5,10
+CSE 0611-231,Data Communication,3,10
+CSE 0611-232,Data Communication Lab,0.75,10
+CSE 0611-221,Computer Architecture,3,10
+CSE 0613 - 250,Software Development Project I,0.75,10
+CPPG 0031-401,Career Planning & Professional Grooming,2,10
+CSE 0612 - 341,Computer Networks,3,10
+CSE 0612 - 342,Computer Networks Lab,1.5,10
+CSE 0613 - 303,Web Programming,3,10
+CSE 0613 - 304,Web Programming Lab,0.75,10
+CSE 0541-361,Numerical Methods,3,10
+CSE 0541-362,Numerical Methods Lab,0.75,10
+CSE 0613 - 355,System Analysis and Design,3,10
+CSE 0613 - 356,System Analysis and Design Lab,0.75,10
+SO 0314 - 283,Sociology and Ethics,2,10
+CSE 0314 - 300,Mobile App Development,0.75,10
+CSE 0613 - 357,Software Engineering,3,10
+CSE 0613 - 358,Software Engineering Lab,0.75,10
+CSE 0611 - 323,Microprocessor & Embedded System,3,10
+CSE 0611 - 324,Microprocessor & Embedded System Lab,1.5,10
+ACC 0411 - 311,Accounting,3,10
+CSE 0611 - 309,Theory of Computing,2,10
+CSE 0611 - 351,Operating System,3,10
+CSE 0611 - 352,Operating System Lab,1.5,10
+CSE 0613 - 350,Software Development Project II,0.75,10
